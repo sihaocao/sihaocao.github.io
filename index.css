@@ -1,0 +1,115 @@
+:root {
+    background-color: white;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html, body, .wrapper {
+    height: 100%;
+}
+
+.profile-pic {
+    display: none;
+}
+
+.nav {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.me {
+    width: 50%;
+}
+
+.projects, .about {
+    width: 25%;
+}
+
+.me, .projects, .about {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 150%;
+    border-left: 0.2rem solid white;
+    border-right: 0.2rem solid white;
+    cursor: pointer;
+}
+
+.me:hover, .projects:hover, .about:hover {
+    background-color: white;
+    color: black;
+}
+
+main {
+    margin-top: 13%;
+    width: 100%;
+    height: 100%;
+}
+
+.information {
+    font-size: 300%;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    section {
+        display: flex;
+        height: 100vh;
+    }
+
+    .nav {
+        width: 24%;
+        height: 100%;
+        left: 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        border-top: 0.2rem solid white;
+        border-bottom: 0.2rem solid white;
+    }
+
+    .profile-pic {
+        width: 50%;
+        height: 50%;
+        display: block;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .me, .projects, .about {
+        display: block;
+        width: 100%;
+        padding: 2rem;
+        font-size: 300%;
+        border-top: 0.2rem solid white;
+        border-bottom: 0.2rem solid white;
+        border-left: 0rem;
+        border-right: 0rem;
+    }
+
+    main {
+        margin-top: 0%;
+        margin-left: 25%;
+        width: 100%;
+        height: 100%;
+    }
+}
