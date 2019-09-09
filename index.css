@@ -54,11 +54,6 @@ a {
     cursor: pointer;
 }
 
-.me:hover, .projects:hover, .about:hover {
-    background-color: white;
-    color: black;
-}
-
 main {
     margin-top: 13%;
     width: 100%;
@@ -82,11 +77,6 @@ h1 {
     border: 0.1rem solid black;
 }
 
-button:hover {
-    background-color: white;
-    color: black;
-}
-
 .about-me {
     margin: 5% 5% 5% 0%;
 }
@@ -99,11 +89,6 @@ button:hover {
     background-color: black;
     color: white;
     border: 0.1rem solid black;
-}
-
-.social:hover {
-    background-color: black;
-    color: white;
 }
 
 .my-projects {
@@ -171,16 +156,6 @@ img {
 .my-project-website {
     border: 0.1rem solid black;
     background-color: white;
-}
-
-.my-project-code:hover {
-    background-color: white;
-    color: black;
-}
-
-.my-project-website:hover {
-    background-color: black;
-    color: white;
 }
 
 @media screen and (max-width: 360px) {
