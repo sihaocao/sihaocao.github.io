@@ -31,19 +31,15 @@ html, body, .wrapper {
     display: flex;
 }
 
-a {
-    color: white;
-}
-
-.me {
+#me {
     width: 50%;
 }
 
-.projects, .about {
+#projects, #about {
     width: 25%;
 }
 
-.me, .projects, .about {
+#me, #projects, #about {
     background-color: black;
     color: white;
     text-align: center;
@@ -54,6 +50,11 @@ a {
     cursor: pointer;
 }
 
+#me:hover, #projects:hover, #about:hover {
+    background-color: white;
+    color: black;
+}
+
 main {
     margin-top: 13%;
     width: 100%;
@@ -61,52 +62,101 @@ main {
 }
 
 .information {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.bio-content-text, .about-my-background, .career-objective {
+    margin-top: 30%;
+    margin-bottom: 10%;
+    color: #666666;
     font-size: 200%;
-    padding-left: 2rem;
 }
 
-h1 {
-    margin: 20% auto 10% auto;
+.about-my-background {
+    margin-bottom: 5%;
 }
 
-.home {
-    padding: 2rem;
-    font-size: 2rem;
+.career-objective {
+    margin: 0% auto;
+}
+
+.highlight {
+    color: black;
+}
+
+.button-group {
+    display: inline-block;
+}
+
+.button-dark {
     background-color: black;
     color: white;
     border: 0.1rem solid black;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    font-size: 200%;
+    cursor: pointer;
 }
 
-.about-me {
-    margin: 5% 5% 5% 0%;
+.button-dark:hover {
+    background-color: #666666;
+}
+
+.button-light {
+    background-color: white;
+    color: black;
+    border: 0.1rem solid black;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.button-light:hover {
+    background-color: #333333;
+    color: white;
 }
 
 .social {
-    padding: 1rem;
-    font-size: 1rem;
-    width: 20%;
-    margin-right: 2%;
-    background-color: black;
-    color: white;
-    border: 0.1rem solid black;
+    display: flex;
 }
 
-.my-projects {
+.social li {
+    align-self: center;
+    margin: 5% 5% 5% 0%;
+}
+
+.social-icons {
+    color: black;
+}
+
+.social-icons:hover {
+    color: #666666;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
     flex: 1 1 100%;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
-.my-project {
-    width: 100%;
-    max-width: 90%;
+.project {
+    display: flex;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    flex: 1 1 100%;
     margin-bottom: 5%;
-    background-color: white;
-    border: 0.1rem solid black;
+    background-color: #FDFFFC;
+    border: 0.1rem solid #eeeeee;
+    width: 100%;
+    max-width: 90%;
 }
 
-.project-screenshot {
+.img-container {
     width: 95%;
     margin-top: 2%;
     margin-left: auto;
@@ -114,74 +164,84 @@ h1 {
     margin-bottom: 0%;
 }
 
-img {
+.food-quiz-project, .football-rules-project {
     width: 100%;
     max-width: 768px;
 }
 
-.my-project-details {
-    padding-left: 1rem;
+.project-details {
+    padding: 1rem;
 }
 
-.my-project-title {
-    font-size: 120%;
+.project-title {
+    margin: 0rem;
+    color: #333;
+    font-size: 200%;
 }
 
-.tech-icons {
+.project-icons {
+    margin-top: 2%;
+}
+
+.tech-icons-list {
     display: flex;
-}
-
-.tech-icons li {
-    margin-right: 0.5rem;
-}
-
-.my-project-description {
-    font-size: 100%;
-}
-
-.my-project-code, .my-project-website {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    margin-right: 5%;
-    font-size: 80%;
-    padding: 0.5rem;
-}
-
-.my-project-code {
-    background-color: black;
-    color: white;
-    border: 0.1rem solid black;
-}
-
-.my-project-website {
-    border: 0.1rem solid black;
-    background-color: white;
-}
-
-.wireframe-box {
-    width: 100%;
-    height: 20rem;
-    margin-bottom: 2%;
-    border: 0.1rem solid black;
-}
-
-.wireframe-description {
-    font-size: 125%;
-}
-
-.wireframe-project-details {
     margin-bottom: 2%;
 }
 
-@media screen and (max-width: 360px) {
-    .home {
-        font-size: 1.5rem;
-    }
+.tech-icons-list li {
+    margin: 0% 1% 0% 0%;
+}
 
-    .social {
-        padding: 0.5rem;
+.project-description {
+    color: #666666;
+    margin-bottom: 4%;
+    font-size: 140%;
+}
+
+.project-social {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.project-social li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+
+@media screen and (max-width: 425px) {
+    .button-dark, .button-light {
+        font-size: 150%;
     }
 }
+
+
+
+@media screen and (max-width: 375px) {
+    .bio-content-text, .button-dark, .button-light, .about-my-background, .career-objective {
+        font-size: 140%;
+    }
+}
+
+
+
+@media screen and (max-width: 325px) {
+    .button-dark, .button-light {
+        font-size: 130%;
+    }
+}
+
+
+
+@media screen and (max-width: 320px) {
+    .about-my-background, .career-objective {
+        font-size: 150%;
+    }
+}
+
+
 
 @media screen and (min-width: 768px) {
     section {
@@ -211,7 +271,7 @@ img {
         margin-right: auto;
     }
 
-    .me, .projects, .about {
+    #me, #projects, #about {
         display: block;
         width: 100%;
         padding: 2rem;
@@ -229,7 +289,97 @@ img {
         height: 100%;
     }
 
-    .my-projects {
-        padding-top: 3rem;
+    .bio-content-text, .button-dark, .button-light, .about-my-background, .career-objective {
+        font-size: 240%;
+    }
+
+    .bio-content-text, .about-my-background, .career-objective {
+        margin-top: 30%;
+        margin-bottom: 5%;
+        line-height: 140%;
+    }
+
+    .about-my-background {
+        margin-top: 15%;
+    }
+
+    .career-objective {
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    .project-description {
+        font-size: 160%;
+        line-height: 140%;
+    }
+}
+
+
+
+@media screen and (min-width: 800px) {
+    .information {
+        margin-bottom: 10%;
+    }
+
+    .project-details {
+        padding: 2rem;
+    }
+
+    .information {
+        margin-top: 5%;
+    }
+
+    .projects {
+        padding-bottom: 0rem;
+    }
+
+    .project-social li {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+
+
+@media screen and (min-width: 1000px) {
+    .project-description {
+        font-size: 180%;
+        line-height: 150%;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .project-title {
+        font-size: 240%;
+    }
+
+    .project-description {
+        font-size: 200%;
+    }
+}
+
+
+
+@media screen and (min-width: 1400px) {
+    .bio-content-text, .about-my-background, .career-objective {
+        font-size: 280%;
+        margin-top: 25%;
+        margin-bottom: 3%;
+        line-height: 150%;
+    }
+
+    .about-my-background {
+        margin-top: 10%;
+    }
+
+    .career-objective {
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    .project {
+        max-width: 80%;
     }
 }
