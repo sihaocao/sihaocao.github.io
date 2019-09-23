@@ -68,6 +68,12 @@ function addBio() {
     $('#me').on('click', function(event) {
         $(event.currentTarget).css({'background-color': 'white', 'color': 'black'});
         $('#projects, #about').css({'background-color': 'black', 'color': 'white'});
+        // something is not functioning properly from lines 72 - 76
+        $('#projects, #about').on('mouseenter', function(event) {
+            $(event.currentTarget).css({'background-color': 'black', 'color': '#666666'});
+        }).on('mouseleave', function(event) {
+            $(event.currentTarget).css({'background-color': 'black', 'color': 'white'});
+        });
         $('.information').html(`
             <p class="bio-content-text">As a <span class="highlight">Web Developer</span> currently based in the <span class="highlight">Boston</span> area, I have a passion for using code to <span class="highlight">solve problems</span> and bring <span class="highlight">imaginations</span> to life. With tech scene's rapidly changing lanscape, I enjoy <span class="highlight">searching</span> for and <span class="highlight">learning</span> about various libraries and frameworks. I consider myself a <span class="highlight">dedicated</span> and <span class="highlight">diligent</span> individual who is always looking for ways to achieve greater <span class="highlight">efficiency</span>. Feel free to <span class="highlight">contact me</span> or <span class="highlight">browse</span> my projects using the links below.</p>
                 <div class="button-group">
@@ -81,6 +87,12 @@ function addPortfolio() {
     $('#projects').on('click', function(event) {
         $(event.currentTarget).css({'background-color': 'white', 'color': 'black'});
         $('#me, #about').css({'background-color': 'black', 'color': 'white'});
+        // something is not functioning properly from lines 91 - 95
+        $('#me, #about').on('mouseenter', function(event) {
+            $(event.currentTarget).css({'background-color': 'black', 'color': '#666666'});
+        }).on('mouseleave', function(event) {
+            $(event.currentTarget).css({'background-color': 'black', 'color': 'white'});
+        });
         addProjects();
     });
 }
@@ -89,6 +101,12 @@ function addAbout() {
     $('#about').on('click', function(event) {
         $(event.currentTarget).css({'background-color': 'white', 'color': 'black'});
         $('#me, #projects').css({'background-color': 'black', 'color': 'white'});
+        // something is not functioning properly from lines 105 - 109
+        $('#me, #projects').on('mouseenter', function(event) {
+            $(event.currentTarget).css({'background-color': 'black', 'color': '#666666'});
+        }).on('mouseleave', function(event) {
+            $(event.currentTarget).css({'background-color': 'black', 'color': 'white'});
+        });
         $('.information').html(`<p class="about-my-background">Hello there, my name is <span class="highlight">Sihao</span>! I'm a <span class="highlight">fullstack developer</span> currently attending Bloc's Web Developer <span class="highlight">Bootcamp</span>. In the past, I was a corporate <span class="highlight">Financial Analyst</span> and a high school <span class="highlight">Math</span> and <span class="highlight">Mandarin Teacher</span>. Besides <span class="highlight">coding</span> and <span class="highlight">problem solving</span>, I enjoy <span class="highlight">officiating</span> Football and Lacrosse, <span class="highlight">playing</span> Dodgeball and Volleyball, <span class="highlight">trying</span> to win in Monopoly and Scrabble, <span class="highlight">cooking (or experimenting)</span> a recipe I thought of last night, or <span class="highlight">reading</span> self-help or personal finance books.</p>
         <br><p class="career-objective"><span class="highlight">Currently</span>, I'm looking for exciting <span class="highlight">career</span> opportunities in <span class="highlight">tech</span> and can be <span class="highlight">reached</span> using any of the <span class="highlight">following links</span>.</p>
             <ul class="social">
@@ -104,6 +122,12 @@ function viewPortfolio() {
     $('main').on('click', '#portfolio-button', function() {
         $('#projects').css({'background-color': 'white', 'color': 'black'});
         $('#me, #about').css({'background-color': 'black', 'color': 'white'});
+        // something is not functioning properly from lines 126 - 130
+        $('#me, #about').on('mouseenter', function(event) {
+            $(event.currentTarget).css({'background-color': 'black', 'color': '#666666'});
+        }).on('mouseleave', function(event) {
+            $(event.currentTarget).css({'background-color': 'black', 'color': 'white'});
+        });
         addProjects();
     });
 }
