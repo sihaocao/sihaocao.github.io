@@ -50,7 +50,7 @@ html, body, .wrapper {
     cursor: pointer;
 }
 
-.nav-list .me:hover, .nav-list .my-projects:hover, .nav-list .about:hover {
+.nav-list li.before-click:hover {
     background-color: white;
     color: black;
 }

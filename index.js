@@ -66,6 +66,7 @@ function addProjects() {
 
 function addBio() {
     $('.me').on('click', function() {
+        $('.me, .my-projects, .about').removeClass('before-click');
         $('.me').addClass('selected');
         $('.nav-list li:not(.me)').removeClass('selected');
         $('.information').html(`
@@ -79,6 +80,7 @@ function addBio() {
 
 function addPortfolio() {
     $('.my-projects').on('click', function() {
+        $('.me, .my-projects, .about').removeClass('before-click');
         $('.my-projects').addClass('selected');
         $('.nav-list li:not(.my-projects)').removeClass('selected');
         addProjects();
@@ -87,6 +89,7 @@ function addPortfolio() {
 
 function addAbout() {
     $('.about').on('click', function() {
+        $('.me, .my-projects, .about').removeClass('before-click');
         $('.about').addClass('selected');
         $('.nav-list li:not(.about)').removeClass('selected');
         $('.information').html(`<p class="about-my-background">Hello there, my name is <span class="highlight">Sihao</span>! I'm a <span class="highlight">fullstack developer</span> currently attending Bloc's Web Developer <span class="highlight">Bootcamp</span>. In the past, I was a corporate <span class="highlight">Financial Analyst</span> and a high school <span class="highlight">Math</span> and <span class="highlight">Mandarin Teacher</span>. Besides <span class="highlight">coding</span> and <span class="highlight">problem solving</span>, I enjoy <span class="highlight">officiating</span> Football and Lacrosse, <span class="highlight">playing</span> Dodgeball and Volleyball, <span class="highlight">trying</span> to win in Monopoly and Scrabble, <span class="highlight">cooking (or experimenting)</span> a recipe I thought of last night, or <span class="highlight">reading</span> self-help or personal finance books.</p>
@@ -102,6 +105,7 @@ function addAbout() {
 
 function viewPortfolio() {
     $('main').on('click', '#portfolio-button', function() {
+        $('.me, .my-projects, .about').removeClass('before-click');
         $('.my-projects').addClass('selected');
         $('.nav-list li:not(.my-projects)').removeClass('selected');
         addProjects();
