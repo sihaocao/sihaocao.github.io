@@ -61,12 +61,12 @@ html, body, .wrapper {
     background-color: black;    
 }
 
-.nav-list li:active {
+.nav-list li.selected {
     color: black;
     background-color: white;
 }
 
-.nav-list li:active:hover {
+.nav-list li.selected:hover {
     color: black;
     background-color: white;
 }
