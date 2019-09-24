@@ -31,15 +31,15 @@ html, body, .wrapper {
     display: flex;
 }
 
-#me {
+.me {
     width: 50%;
 }
 
-#projects, #about {
+.my-projects, .about {
     width: 25%;
 }
 
-#me, #projects, #about {
+.me, .my-projects, .about {
     background-color: black;
     color: white;
     text-align: center;
@@ -50,7 +50,7 @@ html, body, .wrapper {
     cursor: pointer;
 }
 
-#me:hover, #projects:hover, #about:hover {
+.me:hover, .my-projects:hover, .about:hover {
     background-color: white;
     color: black;
 }
@@ -288,7 +288,7 @@ main {
         margin-right: auto;
     }
 
-    #me, #projects, #about {
+    .me, .my-projects, .about {
         display: block;
         width: 100%;
         padding: 2rem;
