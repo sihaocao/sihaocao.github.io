@@ -50,14 +50,14 @@ html, body, .wrapper {
     cursor: pointer;
 }
 
+.nav-list .me:hover, .nav-list .my-projects:hover, .nav-list .about:hover {
+    background-color: white;
+    color: black;
+}
+
 .nav-list li:hover {
     color: #666666;
     background-color: black;    
-}
-
-.me:hover, .my-projects:hover, .about:hover {
-    background-color: white;
-    color: black;
 }
 
 .nav-list li.selected {
