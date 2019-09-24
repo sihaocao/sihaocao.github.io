@@ -50,15 +50,14 @@ html, body, .wrapper {
     cursor: pointer;
 }
 
-.me:hover, .my-projects:hover, .about:hover {
-    background-color: white;
-    color: black;
-}
-
-/* new menu effects (begin) */
 .nav-list li:hover {
     color: #666666;
     background-color: black;    
+}
+
+.me:hover, .my-projects:hover, .about:hover {
+    background-color: white;
+    color: black;
 }
 
 .nav-list li.selected {
@@ -70,7 +69,6 @@ html, body, .wrapper {
     color: black;
     background-color: white;
 }
-/* new menu effects (end) */
 
 main {
     margin-top: 13%;
