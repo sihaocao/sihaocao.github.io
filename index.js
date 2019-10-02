@@ -55,6 +55,33 @@ function addProjects() {
                     </div>
                 </div>
             </div>
+            <div id="project-3" class="project">
+                <div class="img-container">
+                    <a href="https://sihaocao.github.io/Daily-Crypto-Dashboard/" target="_blank">
+                        <img class="daily-crypto-dashboard-project" src="images/daily-crypto-dashboard.jpg" alt="daily crypto dashboard screenshot">
+                    </a>
+                </div>
+                <div class="project-details">
+                    <h4 class="project-title">Daily Crypto Dashboard</h4>
+                    <div class="project-icons">
+                        <ul class="tech-icons-list">
+                            <li><i class="devicon-html5-plain colored"></i></li>
+                            <li><i class="devicon-css3-plain colored"></i></li>
+                            <li><i class="devicon-javascript-plain colored"></i></li>
+                            <li><i class="devicon-jquery-plain colored"></i></li>
+                        </ul>
+                    </div>
+                    <p class="project-description">Daily Crypto Dashboard is an app that lets you look at a chosen cryptocurrency's important statistics, latest news headlines, and relevant videos all in one place.</p>
+                    <div class="project-links">
+                        <a href="https://sihaocao.github.io/Daily-Crypto-Dashboard/" target="_blank">
+                            <button type="button" class="button-dark">View Project</button>
+                        </a>
+                        <a href="https://github.com/sihaocao/Daily-Crypto-Dashboard" target="_blank">
+                            <button type="button" class="button-light">View Code</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
             <ul class="project-social">
                 <li><a class="social-icons" href="https://github.com/sihaocao/" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
                 <li><a class="social-icons" href="https://www.linkedin.com/in/sihao-cao-648aa93b/" target="_blank"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>

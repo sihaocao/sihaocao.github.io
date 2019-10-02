@@ -56,7 +56,7 @@ html, body, .wrapper {
 }
 
 .nav-list li:hover {
-    color: #666666;
+    color: white;
     background-color: black;    
 }
 
@@ -179,7 +179,7 @@ main {
     margin-bottom: 0%;
 }
 
-.food-quiz-project, .football-rules-project {
+.food-quiz-project, .football-rules-project, .daily-crypto-dashboard-project {
     width: 100%;
     max-width: 768px;
 }
