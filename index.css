@@ -323,6 +323,10 @@ main {
         margin-bottom: 0%;
     }
 
+    .tech-icons-list {
+        font-size: 200%;
+    }
+
     .project-description {
         font-size: 160%;
         line-height: 140%;
@@ -357,6 +361,10 @@ main {
 
 
 @media screen and (min-width: 1000px) {
+    .tech-icons-list {
+        font-size: 250%;
+    }
+    
     .project-description {
         font-size: 180%;
         line-height: 150%;
@@ -396,5 +404,9 @@ main {
 
     .project {
         max-width: 80%;
+    }
+
+    .tech-icons-list {
+        font-size: 300%;
     }
 }
