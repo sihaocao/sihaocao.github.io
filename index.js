@@ -1,14 +1,78 @@
 function addProjects() {
     $('.information').html(`
         <div class="projects">
-            <div id="project-1" class="project">
+            <div id="project-5" class="project">
                 <div class="img-container">
-                    <a href="https://sihaocao.github.io/quiz-challenge/" target="_blank">
-                        <img class="food-quiz-project" src="images/national-food-quiz.jpeg" alt="national food quiz screenshot">
+                    <a href="https://spendwatcher-client.now.sh/" target="_blank">
+                        <img class="spendwatcher-fullstack-capstone-project" src="images/Landing_Page.JPG" alt="spendwatcher fullstack capstone screenshot">
                     </a>
                 </div>
                 <div class="project-details">
-                    <h4 class="project-title">National Dish Knowledge</h4>
+                    <h4 class="project-title">SpendWatcher</h4>
+                    <div class="project-icons">
+                        <ul class="tech-icons-list">
+                            <li><i class="devicon-html5-plain colored"></i></li>
+                            <li><i class="devicon-css3-plain colored"></i></li>
+                            <li><i class="devicon-javascript-plain colored"></i></li>
+                            <li><i class="devicon-react-original colored"></i></li>
+                            <li><i class="devicon-nodejs-plain colored"></i></li>
+                            <li><i class="devicon-postgresql-plain colored"></i></li>
+                        </ul>
+                    </div>
+                    <p class="project-description">SpendWatcher allows anyone to track his or her expenditure information along with the ability to see a statistical breakdown for each expense category.</p>
+                    <div class="project-links">
+                        <a href="https://spendwatcher-client.now.sh/" target="_blank">
+                            <button type="button" class="button-dark">Live App</button>
+                        </a>
+                        <a href="https://github.com/sihaocao/spendwatcher-client" target="_blank">
+                            <button type="button" class="button-light">Client Code</button>
+                        </a>
+                        <a href="https://github.com/sihaocao/spendwatcher-server" target="_blank">
+                            <button type="button" class="button-dark">Server Code</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="project-4" class="project">
+                <div class="img-container">
+                    <a href="https://zebralog-client.now.sh/" target="_blank">
+                        <img class="zebralogs-fullstack-capstone-project" src="images/main-page.png" alt="zebralogs fullstack capstone screenshot">
+                    </a>
+                </div>
+                <div class="project-details">
+                    <h4 class="project-title">ZebraLogs</h4>
+                    <div class="project-icons">
+                        <ul class="tech-icons-list">
+                            <li><i class="devicon-html5-plain colored"></i></li>
+                            <li><i class="devicon-css3-plain colored"></i></li>
+                            <li><i class="devicon-javascript-plain colored"></i></li>
+                            <li><i class="devicon-react-original colored"></i></li>
+                            <li><i class="devicon-nodejs-plain colored"></i></li>
+                            <li><i class="devicon-postgresql-plain colored"></i></li>
+                        </ul>
+                    </div>
+                    <p class="project-description">Zebralogs allows any sports official to track one's game information. You can also search and export the list of contest entries for organized record keeping.</p>
+                    <div class="project-links">
+                        <a href="https://zebralog-client.now.sh/" target="_blank">
+                            <button type="button" class="button-dark">Live App</button>
+                        </a>
+                        <a href="https://github.com/sihaocao/zebralog-client" target="_blank">
+                            <button type="button" class="button-light">Client Code</button>
+                        </a>
+                        <a href="https://github.com/sihaocao/zebralog-server" target="_blank">
+                            <button type="button" class="button-dark">Server Code</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="project-3" class="project">
+                <div class="img-container">
+                    <a href="https://sihaocao.github.io/Daily-Crypto-Dashboard/" target="_blank">
+                        <img class="daily-crypto-dashboard-project" src="images/daily-crypto-dashboard.jpg" alt="daily crypto dashboard screenshot">
+                    </a>
+                </div>
+                <div class="project-details">
+                    <h4 class="project-title">Daily Crypto Dashboard</h4>
                     <div class="project-icons">
                         <ul class="tech-icons-list">
                             <li><i class="devicon-html5-plain colored"></i></li>
@@ -17,12 +81,12 @@ function addProjects() {
                             <li><i class="devicon-jquery-plain colored"></i></li>
                         </ul>
                     </div>
-                    <p class="project-description">National Dish Knowledge is an app that gauges your awareness for each country's national dish. You will get immediate feedback after each question with the final scores displayed at the end.</p>
+                    <p class="project-description">Daily Crypto Dashboard is an app that lets you look at a chosen cryptocurrency's important statistics, latest news headlines, and relevant videos all in one place.</p>
                     <div class="project-links">
-                        <a href="https://sihaocao.github.io/quiz-challenge/" target="_blank">
-                            <button type="button" class="button-dark">View Project</button>
+                        <a href="https://sihaocao.github.io/Daily-Crypto-Dashboard/" target="_blank">
+                            <button type="button" class="button-dark">Live App</button>
                         </a>
-                        <a href="https://github.com/sihaocao/quiz-challenge" target="_blank">
+                        <a href="https://github.com/sihaocao/Daily-Crypto-Dashboard" target="_blank">
                             <button type="button" class="button-light">View Code</button>
                         </a>
                     </div>
@@ -47,22 +111,22 @@ function addProjects() {
                     <p class="project-description">Rules of the Game is an app designed for football officials who wants to see how well they know the NFHS rules. Being knowledgeable of the rules of the game is fundamental to being a good football official and this app is a resource they can use to fine-tune their rules knowledge.</p>
                     <div class="project-links">
                         <a href="https://sihaocao.github.io/football-rules-quiz-app-with-feedback/" target="_blank">
-                            <button type="button" class="button-dark">View Project</button>
+                            <button type="button" class="button-dark">Live App</button>
                         </a>
                         <a href="https://github.com/sihaocao/football-rules-quiz-app-with-feedback" target="_blank">
                             <button type="button" class="button-light">View Code</button>
                         </a>
                     </div>
                 </div>
-            </div>
-            <div id="project-3" class="project">
+            </div>            
+            <div id="project-1" class="project">
                 <div class="img-container">
-                    <a href="https://sihaocao.github.io/Daily-Crypto-Dashboard/" target="_blank">
-                        <img class="daily-crypto-dashboard-project" src="images/daily-crypto-dashboard.jpg" alt="daily crypto dashboard screenshot">
+                    <a href="https://sihaocao.github.io/quiz-challenge/" target="_blank">
+                        <img class="food-quiz-project" src="images/national-food-quiz.jpeg" alt="national food quiz screenshot">
                     </a>
                 </div>
                 <div class="project-details">
-                    <h4 class="project-title">Daily Crypto Dashboard</h4>
+                    <h4 class="project-title">National Dish Knowledge</h4>
                     <div class="project-icons">
                         <ul class="tech-icons-list">
                             <li><i class="devicon-html5-plain colored"></i></li>
@@ -71,12 +135,12 @@ function addProjects() {
                             <li><i class="devicon-jquery-plain colored"></i></li>
                         </ul>
                     </div>
-                    <p class="project-description">Daily Crypto Dashboard is an app that lets you look at a chosen cryptocurrency's important statistics, latest news headlines, and relevant videos all in one place.</p>
+                    <p class="project-description">National Dish Knowledge is an app that gauges your awareness for each country's national dish. You will get immediate feedback after each question with the final scores displayed at the end.</p>
                     <div class="project-links">
-                        <a href="https://sihaocao.github.io/Daily-Crypto-Dashboard/" target="_blank">
-                            <button type="button" class="button-dark">View Project</button>
+                        <a href="https://sihaocao.github.io/quiz-challenge/" target="_blank">
+                            <button type="button" class="button-dark">Live App</button>
                         </a>
-                        <a href="https://github.com/sihaocao/Daily-Crypto-Dashboard" target="_blank">
+                        <a href="https://github.com/sihaocao/quiz-challenge" target="_blank">
                             <button type="button" class="button-light">View Code</button>
                         </a>
                     </div>
@@ -84,7 +148,7 @@ function addProjects() {
             </div>
             <ul class="project-social">
                 <li><a class="social-icons" href="https://github.com/sihaocao/" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
-                <li><a class="social-icons" href="https://www.linkedin.com/in/sihao-cao-648aa93b/" target="_blank"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
+                <li><a class="social-icons" href="https://www.linkedin.com/in/sihao-cao/" target="_blank"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
                 <li><a class="social-icons" href="https://twitter.com/SihaoCao" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
                 <li><a class="social-icons" href="mailto:sihao.cao@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a></li>
             </ul>
