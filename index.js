@@ -101,6 +101,7 @@ function addBio() {
                 <div class="button-group">
                     <a href="mailto:sihao.cao@gmail.com"><button type="button" class="button-dark">Email Me</button></a>
                     <button id="portfolio-button" type="button" class="button-light">View Portfolio</button>
+                    <a href="https://docs.google.com/document/d/1Upz5l9ay7Ote7Zh0KC3pFPpidexqNg0yT3QsHvnSdw4/edit?usp=sharing" target="_blank"><button type='button' class="button-dark">My Résumé</button></a>
                 </div>`);
     });
 }
@@ -123,7 +124,7 @@ function addAbout() {
         <br><p class="career-objective"><span class="highlight">Currently</span>, I'm looking for exciting <span class="highlight">career</span> opportunities in <span class="highlight">tech</span> and can be <span class="highlight">reached</span> using any of the <span class="highlight">following links</span>.</p>
             <ul class="social">
                 <li><a class="social-icons" href="https://github.com/sihaocao/" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
-                <li><a class="social-icons" href="https://www.linkedin.com/in/sihao-cao-648aa93b/" target="_blank"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
+                <li><a class="social-icons" href="https://www.linkedin.com/in/sihao-cao/" target="_blank"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
                 <li><a class="social-icons" href="https://twitter.com/SihaoCao" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
                 <li><a class="social-icons" href="mailto:sihao.cao@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a></li>
             </ul>`);
