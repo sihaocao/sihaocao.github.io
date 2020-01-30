@@ -195,7 +195,7 @@ function addAbout() {
 }
 
 function viewPortfolio() {
-    $('main').on('click', '#portfolio-button', function() {
+    $('.main').on('click', '#portfolio-button', function() {
         $('.me, .my-projects, .about').removeClass('before-click');
         $('.my-projects').addClass('selected');
         $('.nav-list li:not(.my-projects)').removeClass('selected');
