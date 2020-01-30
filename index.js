@@ -21,14 +21,14 @@ function addProjects() {
                     </div>
                     <p class="project-description">SpendWatcher allows anyone to track his or her expenditure information along with the ability to see a statistical breakdown for each expense category.</p>
                     <div class="project-links">
-                        <a href="https://spendwatcher-client.now.sh/" target="_blank">
-                            <button type="button" class="button-dark">Live App</button>
+                        <a href="https://spendwatcher-client.now.sh/" target="_blank" class="button-dark">
+                            Live App
                         </a>
-                        <a href="https://github.com/sihaocao/spendwatcher-client" target="_blank">
-                            <button type="button" class="button-light">Client Code</button>
+                        <a href="https://github.com/sihaocao/spendwatcher-client" target="_blank" class="button-light">
+                            Client Code
                         </a>
-                        <a href="https://github.com/sihaocao/spendwatcher-server" target="_blank">
-                            <button type="button" class="button-dark">Server Code</button>
+                        <a href="https://github.com/sihaocao/spendwatcher-server" target="_blank" class="button-dark">
+                            Server Code
                         </a>
                     </div>
                 </div>
@@ -53,14 +53,14 @@ function addProjects() {
                     </div>
                     <p class="project-description">Zebralogs allows any sports official to track one's game information. You can also search and export the list of contest entries for organized record keeping.</p>
                     <div class="project-links">
-                        <a href="https://zebralog-client.now.sh/" target="_blank">
-                            <button type="button" class="button-dark">Live App</button>
+                        <a href="https://zebralog-client.now.sh/" target="_blank" class="button-dark">
+                            Live App
                         </a>
-                        <a href="https://github.com/sihaocao/zebralog-client" target="_blank">
-                            <button type="button" class="button-light">Client Code</button>
+                        <a href="https://github.com/sihaocao/zebralog-client" target="_blank" class="button-light">
+                            Client Code
                         </a>
-                        <a href="https://github.com/sihaocao/zebralog-server" target="_blank">
-                            <button type="button" class="button-dark">Server Code</button>
+                        <a href="https://github.com/sihaocao/zebralog-server" target="_blank" class="button-dark">
+                            Server Code
                         </a>
                     </div>
                 </div>
@@ -83,11 +83,11 @@ function addProjects() {
                     </div>
                     <p class="project-description">Daily Crypto Dashboard is an app that lets you look at a chosen cryptocurrency's important statistics, latest news headlines, and relevant videos all in one place.</p>
                     <div class="project-links">
-                        <a href="https://sihaocao.github.io/Daily-Crypto-Dashboard/" target="_blank">
-                            <button type="button" class="button-dark">Live App</button>
+                        <a href="https://sihaocao.github.io/Daily-Crypto-Dashboard/" target="_blank" class="button-dark">
+                            Live App
                         </a>
-                        <a href="https://github.com/sihaocao/Daily-Crypto-Dashboard" target="_blank">
-                            <button type="button" class="button-light">View Code</button>
+                        <a href="https://github.com/sihaocao/Daily-Crypto-Dashboard" target="_blank" class="button-light">
+                            View Code
                         </a>
                     </div>
                 </div>
@@ -110,11 +110,11 @@ function addProjects() {
                     </div>
                     <p class="project-description">Rules of the Game is an app designed for football officials who wants to see how well they know the NFHS rules. Being knowledgeable of the rules of the game is fundamental to being a good football official and this app is a resource they can use to fine-tune their rules knowledge.</p>
                     <div class="project-links">
-                        <a href="https://sihaocao.github.io/football-rules-quiz-app-with-feedback/" target="_blank">
-                            <button type="button" class="button-dark">Live App</button>
+                        <a href="https://sihaocao.github.io/football-rules-quiz-app-with-feedback/" target="_blank" class="button-dark">
+                            Live App
                         </a>
-                        <a href="https://github.com/sihaocao/football-rules-quiz-app-with-feedback" target="_blank">
-                            <button type="button" class="button-light">View Code</button>
+                        <a href="https://github.com/sihaocao/football-rules-quiz-app-with-feedback" target="_blank" class="button-light">
+                            View Code
                         </a>
                     </div>
                 </div>
@@ -137,11 +137,11 @@ function addProjects() {
                     </div>
                     <p class="project-description">National Dish Knowledge is an app that gauges your awareness for each country's national dish. You will get immediate feedback after each question with the final scores displayed at the end.</p>
                     <div class="project-links">
-                        <a href="https://sihaocao.github.io/quiz-challenge/" target="_blank">
-                            <button type="button" class="button-dark">Live App</button>
+                        <a href="https://sihaocao.github.io/quiz-challenge/" target="_blank" class="button-dark">
+                            Live App
                         </a>
-                        <a href="https://github.com/sihaocao/quiz-challenge" target="_blank">
-                            <button type="button" class="button-light">View Code</button>
+                        <a href="https://github.com/sihaocao/quiz-challenge" target="_blank" class="button-light">
+                            View Code
                         </a>
                     </div>
                 </div>
@@ -162,11 +162,10 @@ function addBio() {
         $('.nav-list li:not(.me)').removeClass('selected');
         $('.information').html(`
             <p class="bio-content-text">As a <span class="highlight">Web Developer</span> currently based in the <span class="highlight">Boston</span> area, I have a passion for using code to <span class="highlight">solve problems</span> and bring <span class="highlight">imaginations</span> to life. With tech scene's rapidly changing lanscape, I enjoy <span class="highlight">searching</span> for and <span class="highlight">learning</span> about various libraries and frameworks. I consider myself a <span class="highlight">dedicated</span> and <span class="highlight">diligent</span> individual who is always looking for ways to achieve greater <span class="highlight">efficiency</span>. Feel free to <span class="highlight">contact me</span> or <span class="highlight">browse</span> my projects using the links below.</p>
-                <div class="button-group">
-                    <a href="mailto:sihao.cao@gmail.com"><button type="button" class="button-dark">Email Me</button></a>
-                    <button id="portfolio-button" type="button" class="button-light">View Portfolio</button>
-                    <a href="https://docs.google.com/document/d/1Upz5l9ay7Ote7Zh0KC3pFPpidexqNg0yT3QsHvnSdw4/edit?usp=sharing" target="_blank"><button type='button' class="button-dark">My Résumé</button></a>
-                </div>`);
+            <a href="mailto:sihao.cao@gmail.com" class="button-dark">Email Me</a>
+            <button id="portfolio-button" type="button" class="button-light">View Portfolio</button>
+            <a href="https://docs.google.com/document/d/1Upz5l9ay7Ote7Zh0KC3pFPpidexqNg0yT3QsHvnSdw4/edit?usp=sharing" target="_blank" class="button-dark">My Résumé</a>
+        `);
     });
 }
 

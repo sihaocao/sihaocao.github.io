@@ -276,8 +276,8 @@ main {
         border-bottom: 0.2rem solid white;
     }
     .profile-pic {
-        width: 50%;
-        height: 50%;
+        width: 65%;
+        height: 22.5%;
         display: block;
         margin-top: 10%;
         margin-bottom: 10%;
@@ -340,6 +340,9 @@ main {
 }
 
 @media screen and (min-width: 900px) {
+    .profile-pic {
+        width: 60%;
+    }
     .button-dark, .button-light {
         padding: 1.5rem;
         font-size: 200%;
@@ -351,6 +354,9 @@ main {
 }
 
 @media screen and (min-width: 1000px) {
+    .profile-pic {
+        width: 55%;
+    }
     .tech-icons-list {
         font-size: 250%;
     }
@@ -361,6 +367,10 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
+    .profile-pic {
+        width: 52.5%;
+        height: 25%;
+    }
     .project-title {
         font-size: 240%;
     }
@@ -370,6 +380,10 @@ main {
 }
 
 @media screen and (min-width: 1400px) {
+    .profile-pic {
+        width: 50%;
+        height: 27.5%;
+    }
     .bio-content-text, .about-my-background, .career-objective {
         font-size: 280%;
         margin-top: 25%;
@@ -395,5 +409,12 @@ main {
     }
     .tech-icons-list {
         font-size: 300%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .profile-pic {
+        width: 47.5%;
+        height: 30%;
     }
 }
