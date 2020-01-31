@@ -162,7 +162,7 @@ function addBio() {
         $('.nav-list li:not(.me)').removeClass('selected');
         $('.information').html(`
             <h2 class="bio-content-text">As a <span class="highlight">Web Developer</span> currently based in the <span class="highlight">Boston</span> area, I have a passion for using code to <span class="highlight">solve problems</span> and bring <span class="highlight">imaginations</span> to life. With tech scene's rapidly changing lanscape, I enjoy <span class="highlight">searching</span> for and <span class="highlight">learning</span> about various libraries and frameworks. I consider myself a <span class="highlight">dedicated</span> and <span class="highlight">diligent</span> individual who is always looking for ways to achieve greater <span class="highlight">efficiency</span>. Feel free to <span class="highlight">contact me</span> or <span class="highlight">browse</span> my projects using the links below.</h2>
-            <a href="mailto:sihao.cao@gmail.com" class="button-dark">Email Me</a>
+            <a id="contact-me-button" class="button-dark">Contact Me</a>
             <button id="portfolio-button" type="button" class="button-light">View Portfolio</button>
             <a href="https://docs.google.com/document/d/1Upz5l9ay7Ote7Zh0KC3pFPpidexqNg0yT3QsHvnSdw4/edit?usp=sharing" target="_blank" class="button-dark">My Résumé</a>
         `);
@@ -184,12 +184,12 @@ function addAbout() {
         $('.about').addClass('selected');
         $('.nav-list li:not(.about)').removeClass('selected');
         $('.information').html(`<p class="about-my-background">Hello there, my name is <span class="highlight">Sihao</span>! I'm a <span class="highlight">fullstack developer</span> currently attending Bloc's Web Developer <span class="highlight">Bootcamp</span>. In the past, I was a corporate <span class="highlight">Financial Analyst</span> and a high school <span class="highlight">Math</span> and <span class="highlight">Mandarin Teacher</span>. Besides <span class="highlight">coding</span> and <span class="highlight">problem solving</span>, I enjoy <span class="highlight">officiating</span> Football and Lacrosse, <span class="highlight">playing</span> Dodgeball and Volleyball, <span class="highlight">trying</span> to win in Monopoly and Scrabble, <span class="highlight">cooking (or experimenting)</span> a recipe I thought of last night, or <span class="highlight">reading</span> self-help or personal finance books.</p>
-        <br><p class="career-objective"><span class="highlight">Currently</span>, I'm looking to join a team of great <span class="highlight">programmers</span> in search of exciting <span class="highlight">career</span> opportunities in <span class="highlight">tech</span>. I can be <span class="highlight">reached</span> using any of the <span class="highlight">following links</span>.</p>
+        <br><p class="career-objective"><span class="highlight">Currently</span>, I'm looking to join a <span class="highlight">team</span> of great <span class="highlight">programmers</span> in search of exciting <span class="highlight">career</span> opportunities in <span class="highlight">tech</span>. I can be <span class="highlight">reached</span> through any of the <span class="highlight">methods below</span>.</p>
             <ul class="social">
                 <li><a class="social-icons" href="https://github.com/sihaocao/" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
                 <li><a class="social-icons" href="https://www.linkedin.com/in/sihao-cao/" target="_blank"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
                 <li><a class="social-icons" href="https://twitter.com/SihaoCao" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
-                <li><a class="social-icons" href="mailto:sihao.cao@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a></li>
+                <li><a class="social-icons" id="email-icon"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a></li>
             </ul>`);
     });
 }
@@ -203,11 +203,66 @@ function viewPortfolio() {
     });
 }
 
+function addContactEmailMain() {
+    $('.main').on('click', '#contact-me-button', function() {
+        $('.me, .my-projects, .about').removeClass('before-click');
+        $('.me').addClass('selected');
+        $('.nav-list li:not(.me)').removeClass('selected');
+        $('.information').html(`<h3 class="email-contact-me">Thanks for your <span class="highlight">inquiry</span>. You may <span class="highlight">email</span> me at <span class="highlight email-underline">sihao.cao@gmail.com</span>. I look forward to <span class="highlight">hearing from you</span> soon!</h3>
+        <button id="Email-Button-Back" type="button" class="button-dark">Back</button>`);
+    });
+}
+
+function BackToMain() {
+    $('.main').on('click', '#Email-Button-Back', function() {
+        $('.me, .my-projects, .about').removeClass('before-click');
+        $('.me').addClass('selected');
+        $('.nav-list li:not(.me)').removeClass('selected');
+        $('.information').html(`
+            <h2 class="bio-content-text">As a <span class="highlight">Web Developer</span> currently based in the <span class="highlight">Boston</span> area, I have a passion for using code to <span class="highlight">solve problems</span> and bring <span class="highlight">imaginations</span> to life. With tech scene's rapidly changing lanscape, I enjoy <span class="highlight">searching</span> for and <span class="highlight">learning</span> about various libraries and frameworks. I consider myself a <span class="highlight">dedicated</span> and <span class="highlight">diligent</span> individual who is always looking for ways to achieve greater <span class="highlight">efficiency</span>. Feel free to <span class="highlight">contact me</span> or <span class="highlight">browse</span> my projects using the links below.</h2>
+            <a id="contact-me-button" class="button-dark">Contact Me</a>
+            <button id="portfolio-button" type="button" class="button-light">View Portfolio</button>
+            <a href="https://docs.google.com/document/d/1Upz5l9ay7Ote7Zh0KC3pFPpidexqNg0yT3QsHvnSdw4/edit?usp=sharing" target="_blank" class="button-dark">My Résumé</a>
+        `);
+    })
+}
+
+function addContactEmailIcon() {
+    $('.main').on('click', '#email-icon', function() {
+        $('.me, .my-projects, .about').removeClass('before-click');
+        $('.about').addClass('selected');
+        $('.nav-list li:not(.about)').removeClass('selected');
+        $('.information').html(`<h3 class="email-contact-me">Thanks for your <span class="highlight">inquiry</span>. You may <span class="highlight">email</span> me at <span class="highlight email-underline">sihao.cao@gmail.com</span>. I look forward to <span class="highlight">hearing from you</span> soon!</h3>
+        <button id="Email-Icon-Back" type="button" class="button-dark">Back</button>`);
+    });
+}
+
+function BackToAbout() {
+    $('.main').on('click', '#Email-Icon-Back', function() {
+        console.log('clicked');
+        $('.me, .my-projects, .about').removeClass('before-click');
+        $('.about').addClass('selected');
+        $('.nav-list li:not(.about)').removeClass('selected');
+        $('.information').html(`<p class="about-my-background">Hello there, my name is <span class="highlight">Sihao</span>! I'm a <span class="highlight">fullstack developer</span> currently attending Bloc's Web Developer <span class="highlight">Bootcamp</span>. In the past, I was a corporate <span class="highlight">Financial Analyst</span> and a high school <span class="highlight">Math</span> and <span class="highlight">Mandarin Teacher</span>. Besides <span class="highlight">coding</span> and <span class="highlight">problem solving</span>, I enjoy <span class="highlight">officiating</span> Football and Lacrosse, <span class="highlight">playing</span> Dodgeball and Volleyball, <span class="highlight">trying</span> to win in Monopoly and Scrabble, <span class="highlight">cooking (or experimenting)</span> a recipe I thought of last night, or <span class="highlight">reading</span> self-help or personal finance books.</p>
+        <br><p class="career-objective"><span class="highlight">Currently</span>, I'm looking to join a <span class="highlight">team</span> of great <span class="highlight">programmers</span> in search of exciting <span class="highlight">career</span> opportunities in <span class="highlight">tech</span>. I can be <span class="highlight">reached</span> through any of the <span class="highlight">methods below</span>.</p>
+            <ul class="social">
+                <li><a class="social-icons" href="https://github.com/sihaocao/" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
+                <li><a class="social-icons" href="https://www.linkedin.com/in/sihao-cao/" target="_blank"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
+                <li><a class="social-icons" href="https://twitter.com/SihaoCao" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
+                <li><a class="social-icons" id="email-icon"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a></li>
+            </ul>`);
+    });
+}
+
 function runAllFunctions() {
     addBio();
     addPortfolio();
     addAbout();
     viewPortfolio();
+    addContactEmailMain();
+    BackToMain();
+    addContactEmailIcon();
+    BackToAbout();
 }
 
 $(runAllFunctions);
