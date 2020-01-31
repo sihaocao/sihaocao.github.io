@@ -161,10 +161,10 @@ function addBio() {
         $('.me').addClass('selected');
         $('.nav-list li:not(.me)').removeClass('selected');
         $('.information').html(`
-            <h2 class="bio-content-text">As a <span class="highlight">Web Developer</span> currently based in the <span class="highlight">Boston</span> area, I have a passion for using code to <span class="highlight">solve problems</span> and bring <span class="highlight">imaginations</span> to life. With tech scene's rapidly changing lanscape, I enjoy <span class="highlight">searching</span> for and <span class="highlight">learning</span> about various libraries and frameworks. I consider myself a <span class="highlight">dedicated</span> and <span class="highlight">diligent</span> individual who is always looking for ways to achieve greater <span class="highlight">efficiency</span>. Feel free to <span class="highlight">contact me</span> or <span class="highlight">browse</span> my projects using the links below.</h2>
+            <h2 class="bio-content-text">As a <span class="highlight">Web Developer</span> currently based in the <span class="highlight">Boston</span> area, I have a passion for using code to <span class="highlight">solve problems</span> and bring <span class="highlight">imaginations</span> to life. With the tech scene's rapidly changing landscape, I enjoy <span class="highlight">searching</span> for and <span class="highlight">learning</span> about various libraries and frameworks. I consider myself a <span class="highlight">dedicated</span> and <span class="highlight">diligent</span> individual who is always looking for ways to achieve greater <span class="highlight">efficiency</span>. Feel free to <span class="highlight">contact me</span> or <span class="highlight">browse</span> my projects using the links below.</h2>
             <a id="contact-me-button" class="button-dark">Contact Me</a>
             <button id="portfolio-button" type="button" class="button-light">View Portfolio</button>
-            <a href="https://docs.google.com/document/d/1Upz5l9ay7Ote7Zh0KC3pFPpidexqNg0yT3QsHvnSdw4/edit?usp=sharing" target="_blank" class="button-dark">My Résumé</a>
+            <a href="https://docs.google.com/document/d/1o5EN0J7ZRfdJKy-TBzWzIvtXSpPwtLTs_cTtuCkc2a8/edit?usp=sharing" target="_blank" class="button-dark">My Résumé</a>
         `);
     });
 }
@@ -219,10 +219,10 @@ function BackToMain() {
         $('.me').addClass('selected');
         $('.nav-list li:not(.me)').removeClass('selected');
         $('.information').html(`
-            <h2 class="bio-content-text">As a <span class="highlight">Web Developer</span> currently based in the <span class="highlight">Boston</span> area, I have a passion for using code to <span class="highlight">solve problems</span> and bring <span class="highlight">imaginations</span> to life. With tech scene's rapidly changing lanscape, I enjoy <span class="highlight">searching</span> for and <span class="highlight">learning</span> about various libraries and frameworks. I consider myself a <span class="highlight">dedicated</span> and <span class="highlight">diligent</span> individual who is always looking for ways to achieve greater <span class="highlight">efficiency</span>. Feel free to <span class="highlight">contact me</span> or <span class="highlight">browse</span> my projects using the links below.</h2>
+            <h2 class="bio-content-text">As a <span class="highlight">Web Developer</span> currently based in the <span class="highlight">Boston</span> area, I have a passion for using code to <span class="highlight">solve problems</span> and bring <span class="highlight">imaginations</span> to life. With the tech scene's rapidly changing landscape, I enjoy <span class="highlight">searching</span> for and <span class="highlight">learning</span> about various libraries and frameworks. I consider myself a <span class="highlight">dedicated</span> and <span class="highlight">diligent</span> individual who is always looking for ways to achieve greater <span class="highlight">efficiency</span>. Feel free to <span class="highlight">contact me</span> or <span class="highlight">browse</span> my projects using the links below.</h2>
             <a id="contact-me-button" class="button-dark">Contact Me</a>
             <button id="portfolio-button" type="button" class="button-light">View Portfolio</button>
-            <a href="https://docs.google.com/document/d/1Upz5l9ay7Ote7Zh0KC3pFPpidexqNg0yT3QsHvnSdw4/edit?usp=sharing" target="_blank" class="button-dark">My Résumé</a>
+            <a href="https://docs.google.com/document/d/1o5EN0J7ZRfdJKy-TBzWzIvtXSpPwtLTs_cTtuCkc2a8/edit?usp=sharing" target="_blank" class="button-dark">My Résumé</a>
         `);
     })
 }
