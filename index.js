@@ -239,7 +239,6 @@ function addContactEmailIcon() {
 
 function BackToAbout() {
     $('.main').on('click', '#Email-Icon-Back', function() {
-        console.log('clicked');
         $('.me, .my-projects, .about').removeClass('before-click');
         $('.about').addClass('selected');
         $('.nav-list li:not(.about)').removeClass('selected');
