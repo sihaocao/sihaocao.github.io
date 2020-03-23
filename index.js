@@ -1,7 +1,7 @@
 function addProjects() {
     $('.information').html(`
         <div class="projects">
-            <div id="project-5" class="project">
+            <div id="project-6" class="project">
                 <div class="img-container">
                     <a href="https://spendwatcher-client.now.sh/" target="_blank">
                         <img class="spendwatcher-fullstack-capstone-project" src="images/Landing_Page.JPG" alt="spendwatcher fullstack capstone screenshot">
@@ -33,7 +33,7 @@ function addProjects() {
                     </div>
                 </div>
             </div>
-            <div id="project-4" class="project">
+            <div id="project-5" class="project">
                 <div class="img-container">
                     <a href="https://zebralog-client.now.sh/" target="_blank">
                         <img class="zebralogs-fullstack-capstone-project" src="images/main-page.png" alt="zebralogs fullstack capstone screenshot">
@@ -61,6 +61,33 @@ function addProjects() {
                         </a>
                         <a href="https://github.com/sihaocao/zebralog-server" target="_blank" class="button-dark">
                             Server Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="project-4" class="project">
+                <div class="img-container">
+                    <a href="https://weather-now-lac.now.sh/" target="_blank">
+                        <img class="weather-now-project" src="images/cold.png" alt="weather now screenshot">
+                    </a>
+                </div>
+                <div class="project-details">
+                    <h4 class="project-title">Weather Now</h4>
+                    <div class="project-icons">
+                        <ul class="tech-icons-list">
+                            <li><i class="devicon-html5-plain colored"></i></li>
+                            <li><i class="devicon-css3-plain colored"></i></li>
+                            <li><i class="devicon-javascript-plain colored"></i></li>
+                            <li><i class="devicon-react-original colored"></i></li>
+                        </ul>
+                    </div>
+                    <p class="project-description">A basic weather app that tells you the current temperature and weather condition of the location of your choice.</p>
+                    <div class="project-links">
+                        <a href="https://weather-now-lac.now.sh/" target="_blank" class="button-dark">
+                            Live App
+                        </a>
+                        <a href="https://github.com/sihaocao/weather-now" target="_blank" class="button-light">
+                            View Code
                         </a>
                     </div>
                 </div>
@@ -156,7 +183,7 @@ function addProjects() {
 }
 
 function addBio() {
-    $('.me').on('click', function() {
+    $('.me').on('click', function () {
         $('.me, .my-projects, .about').removeClass('before-click');
         $('.me').addClass('selected');
         $('.nav-list li:not(.me)').removeClass('selected');
@@ -170,7 +197,7 @@ function addBio() {
 }
 
 function addPortfolio() {
-    $('.my-projects').on('click', function() {
+    $('.my-projects').on('click', function () {
         $('.me, .my-projects, .about').removeClass('before-click');
         $('.my-projects').addClass('selected');
         $('.nav-list li:not(.my-projects)').removeClass('selected');
@@ -179,7 +206,7 @@ function addPortfolio() {
 }
 
 function addAbout() {
-    $('.about').on('click', function() {
+    $('.about').on('click', function () {
         $('.me, .my-projects, .about').removeClass('before-click');
         $('.about').addClass('selected');
         $('.nav-list li:not(.about)').removeClass('selected');
@@ -195,7 +222,7 @@ function addAbout() {
 }
 
 function viewPortfolio() {
-    $('.main').on('click', '#portfolio-button', function() {
+    $('.main').on('click', '#portfolio-button', function () {
         $('.me, .my-projects, .about').removeClass('before-click');
         $('.my-projects').addClass('selected');
         $('.nav-list li:not(.my-projects)').removeClass('selected');
@@ -204,7 +231,7 @@ function viewPortfolio() {
 }
 
 function addContactEmailMain() {
-    $('.main').on('click', '#contact-me-button', function() {
+    $('.main').on('click', '#contact-me-button', function () {
         $('.me, .my-projects, .about').removeClass('before-click');
         $('.me').addClass('selected');
         $('.nav-list li:not(.me)').removeClass('selected');
@@ -214,7 +241,7 @@ function addContactEmailMain() {
 }
 
 function BackToMain() {
-    $('.main').on('click', '#Email-Button-Back', function() {
+    $('.main').on('click', '#Email-Button-Back', function () {
         $('.me, .my-projects, .about').removeClass('before-click');
         $('.me').addClass('selected');
         $('.nav-list li:not(.me)').removeClass('selected');
@@ -228,7 +255,7 @@ function BackToMain() {
 }
 
 function addContactEmailIcon() {
-    $('.main').on('click', '#email-icon', function() {
+    $('.main').on('click', '#email-icon', function () {
         $('.me, .my-projects, .about').removeClass('before-click');
         $('.about').addClass('selected');
         $('.nav-list li:not(.about)').removeClass('selected');
@@ -238,7 +265,7 @@ function addContactEmailIcon() {
 }
 
 function BackToAbout() {
-    $('.main').on('click', '#Email-Icon-Back', function() {
+    $('.main').on('click', '#Email-Icon-Back', function () {
         $('.me, .my-projects, .about').removeClass('before-click');
         $('.about').addClass('selected');
         $('.nav-list li:not(.about)').removeClass('selected');
