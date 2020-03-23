@@ -177,7 +177,7 @@ function addProjects() {
                 <li><a class="social-icons" href="https://github.com/sihaocao/" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
                 <li><a class="social-icons" href="https://www.linkedin.com/in/sihao-cao/" target="_blank"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
                 <li><a class="social-icons" href="https://twitter.com/SihaoCao" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
-                <li><a class="social-icons" href="mailto:sihao.cao@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a></li>
+                <li><a class="social-icons" id="email-icon-portfolio"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a></li>
             </ul>
         </div>`);
 }
@@ -216,13 +216,32 @@ function addAbout() {
                 <li><a class="social-icons" href="https://github.com/sihaocao/" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
                 <li><a class="social-icons" href="https://www.linkedin.com/in/sihao-cao/" target="_blank"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
                 <li><a class="social-icons" href="https://twitter.com/SihaoCao" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
-                <li><a class="social-icons" id="email-icon"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a></li>
+                <li><a class="social-icons" id="email-icon-about"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a></li>
             </ul>`);
     });
 }
 
 function viewPortfolio() {
     $('.main').on('click', '#portfolio-button', function () {
+        $('.me, .my-projects, .about').removeClass('before-click');
+        $('.my-projects').addClass('selected');
+        $('.nav-list li:not(.my-projects)').removeClass('selected');
+        addProjects();
+    });
+}
+
+function addContactEmailPortfolio() {
+    $('.main').on('click', '#email-icon-portfolio', function () {
+        $('.me, .my-projects, .about').removeClass('before-click');
+        $('.my-projects').addClass('selected');
+        $('.nav-list li:not(.my-projects)').removeClass('selected');
+        $('.information').html(`<h3 class="email-contact-me">Thanks for your <span class="highlight">inquiry</span>. You may <span class="highlight">email</span> me at <span class="highlight email-underline">sihao.cao@gmail.com</span>. I look forward to <span class="highlight">hearing from you</span> soon!</h3>
+        <button id="Email-Icon-Back-Portfolio" type="button" class="button-dark">Back</button>`);
+    });
+}
+
+function BackToPortfolio() {
+    $('.main').on('click', '#Email-Icon-Back-Portfolio', function () {
         $('.me, .my-projects, .about').removeClass('before-click');
         $('.my-projects').addClass('selected');
         $('.nav-list li:not(.my-projects)').removeClass('selected');
@@ -251,21 +270,21 @@ function BackToMain() {
             <button id="portfolio-button" type="button" class="button-light">View Portfolio</button>
             <a href="https://docs.google.com/document/d/1o5EN0J7ZRfdJKy-TBzWzIvtXSpPwtLTs_cTtuCkc2a8/edit?usp=sharing" target="_blank" class="button-dark">My Résumé</a>
         `);
-    })
+    });
 }
 
 function addContactEmailIcon() {
-    $('.main').on('click', '#email-icon', function () {
+    $('.main').on('click', '#email-icon-about', function () {
         $('.me, .my-projects, .about').removeClass('before-click');
         $('.about').addClass('selected');
         $('.nav-list li:not(.about)').removeClass('selected');
         $('.information').html(`<h3 class="email-contact-me">Thanks for your <span class="highlight">inquiry</span>. You may <span class="highlight">email</span> me at <span class="highlight email-underline">sihao.cao@gmail.com</span>. I look forward to <span class="highlight">hearing from you</span> soon!</h3>
-        <button id="Email-Icon-Back" type="button" class="button-dark">Back</button>`);
+        <button id="Email-Icon-Back-About" type="button" class="button-dark">Back</button>`);
     });
 }
 
 function BackToAbout() {
-    $('.main').on('click', '#Email-Icon-Back', function () {
+    $('.main').on('click', '#Email-Icon-Back-About', function () {
         $('.me, .my-projects, .about').removeClass('before-click');
         $('.about').addClass('selected');
         $('.nav-list li:not(.about)').removeClass('selected');
@@ -275,7 +294,7 @@ function BackToAbout() {
                 <li><a class="social-icons" href="https://github.com/sihaocao/" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
                 <li><a class="social-icons" href="https://www.linkedin.com/in/sihao-cao/" target="_blank"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
                 <li><a class="social-icons" href="https://twitter.com/SihaoCao" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
-                <li><a class="social-icons" id="email-icon"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a></li>
+                <li><a class="social-icons" id="email-icon-about"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a></li>
             </ul>`);
     });
 }
@@ -285,6 +304,8 @@ function runAllFunctions() {
     addPortfolio();
     addAbout();
     viewPortfolio();
+    addContactEmailPortfolio();
+    BackToPortfolio();
     addContactEmailMain();
     BackToMain();
     addContactEmailIcon();
