@@ -145,7 +145,7 @@ body,
   background-color: #333333;
   color: white;
 }
-f .social {
+.social {
   margin-top: 10%;
   display: flex;
   justify-content: center;
