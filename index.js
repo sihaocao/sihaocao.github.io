@@ -272,7 +272,11 @@ function BackToMain() {
         $('.me').addClass('selected');
         $('.nav-list li:not(.me)').removeClass('selected');
         $('.information').html(`
-            <h2 class="bio-content-text">As a <span class="highlight">Web Developer</span> currently based in the <span class="highlight">Boston</span> area, I have a passion for using code to <span class="highlight">solve problems</span> and bring <span class="highlight">imaginations</span> to life. With the tech scene's <span class="highlight">rapidly changing</span> landscape, I enjoy <span class="highlight">searching</span> for and <span class="highlight">working</span> with various libraries and frameworks. I consider myself a <span class="highlight">dedicated</span> and <span class="highlight">diligent</span> individual who is always looking for ways to achieve greater <span class="highlight">efficiency</span>. Feel free to <span class="highlight">contact me</span> or <span class="highlight">browse</span> my <span class="highlight">projects</span> using the <span class="highlight">links</span> below.</h2>
+            <h2 class="bio-content-text">I'm a <span class="highlight">results-driven, goal-oriented</span> individual with experience in <span class="highlight">technology, finance,</span> and <span class="highlight">education.</span> I'm currently a <span
+                            class="highlight">software quality assurance engineer</span> at Reggora: a Boston area <span
+                            class="highlight">fintech</span> company in the real estate appraisals industry. During my <span class="highlight">spare time</span>, I'm a <span
+                            class="highlight">cryptocurrency</span> and <span class="highlight">digital assets</span> researcher with the <span class="highlight">sole</span> focus on <span class="highlight">Bitcoin</span>. I am open to learning about <span class="highlight">remote-based</span> career opportunities in <span class="highlight">cryptocurrency, finance,</span> and <span class="highlight">technology</span>. Feel free to <span class="highlight">contact
+                            me</span> or <span class="highlight">browse my projects</span> using the <span class="highlight">links</span> below.</h2>
             <div class="buttons-group">
                 <a id="contact-me-button" class="button-dark">Contact</a>
                 <button id="portfolio-button" type="button" class="button-light">Portfolio</button>
